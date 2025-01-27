@@ -1,8 +1,8 @@
-import{Schena} from "mongoose";
+import { Schema } from "mongoose";
 
-
-export const userSchena = new Schena({
-    username: {type: String, required: true, unique:true},
+export const userSchema = new Schema({
+    username: {type: String, required: true, unique: true},
     name: {type: String, required: true},
-    email: {type: String, required: true, unique:true},
-    passoword : {type : String}
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+}, {timestamps: true}); 
