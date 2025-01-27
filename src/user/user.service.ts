@@ -32,14 +32,10 @@ async updateUser(userId: string, userData: Partial<IUser>): Promise<IUser | null
     return this.userModel.findByIdAndUpdate(userId, userData, { new: true});
 
 }
+async deleteUser(userId: string): Promise<IUser | null>{
 
-///asdflhaksjfh klajhfdd ahfnsdlcnlmafc
-///adsfkjlksdfjlksdjfasfj~kjf
-///adsfkjlksdfjlksdjfasfj~kjf
-///adsfkjlksdfjlksdjfasfj~kjf
-///adsfkjlksdfjlksdjfasfj~kjf
-///adsfkjlksdfjlksdjfasfj~kjf
-///adsfkjlksdfjlksdjfasfj~kjf
-///adsfkjlksdfjlksdjfasfj~kjf
+    return this.userModel.findByIdAndDelete(userId);
+
+}
 
 }
